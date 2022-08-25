@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Image Generation - by Amasad</title>
+    <script>
+      document.addEventListener('keyup', evt => {
+        if (evt.code === 'Enter') {
+          document.getElementById("gen").click();
+          var title = document.querySelector("input").value;
+          document.querySelector('title').textContent = title+" | AI Image Generation";
+        }
+      })
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+    <script src="https://repl-button.glique.repl.co/script.js" replOwner="amasad" replName="AI Image Generate Stable Diffusion" theme="" embed="false" ></script>
+  </body>
+</html>
+
